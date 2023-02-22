@@ -508,21 +508,206 @@ margin: 3rem 0;
    }
  }
 
-/*- - - - - FOOTER - - - - - */
+/* --------------footer-------------------- */
+
 .footer{
   background: #2b2b2b;
-  padding: 4rem 0;
+  padding: 1.5rem 0;
 }
 .footer .footer__wrapper{
+  color: #FFFFFF;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
-.footer .footer__wrapper p{
- color: #ffffff;
-}
+
 .footer .footer__wrapper ul{
   display: flex;
-  color: #ffffff;
+  padding: 0 4rem;
 }
+
+.footer .footer__wrapper  .footer__icon{
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer .footer__wrapper  .footer__icon ul li a{
+  color: #ffffff;
+  font-size: 2rem;
+  
+}
+
+.footer .footer__wrapper  .footer__icon ul li{
+ margin: 2rem;
+  
+}
+
+@media screen and (max-width: 500px){
+  .footer .footer__wrapper{
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer .footer__wrapper .footer__icon{
+      display: block;
+      align-items: center;
+  }
+
+  .footer .footer__wrapper  .footer__icon p{
+      margin-bottom: 2rem;
+  }
+  
+}
+
+/*- - - - - - ABOUT PAGE - - - - - - */
+.about_me {
+  background: #ffffff;
+  padding: 5rem 0;
+  padding-top: 10rem;
+
+}
+.about_me .about_me__wrapper{
+  display: flex;
+ justify-content: space-between;
+ grid-gap: 20%;
+
+}
+.about_me .about_me__text{
+ margin: 0 auto;
+}
+.about_me .about_me__wrapper h2{
+ margin-top: 18rem;
+ font-weight: 600;
+}
+.about_me .about_me__wrapper h1{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.about_me .about_me__wrapper p{
+  text-align: justify;
+  line-height: 3rem;
+  margin-top: 3rem;
+  max-width: 50rem;
+}
+  .about_me .about_me__text li{
+   color: #ffa700;
+  font-size: 2rem;
+  
+}
+.about_me .about_me__text li i{
+  color: #ffa700;
+ font-size: 2rem;
+ padding: 0 2rem;
+}  
+.about_me__wrapper img{
+  display: flex;
+  place-items: center;
+  padding-top: 12rem;
+}
+.abou_me i{
+
+}
+.about_me .container .fa-angle-down{
+  color: #ffa700;
+  position: absolute;
+  left: 50%;
+}
+@media screen and (max-width: 500px)
+{
+  .about_me .about_me__wrapper{
+    flex-direction: column-reverse;
+  }
+  .about_me .about_me__text{
+    margin: 0 2rem;
+  }
+  .about_me .about_me__text p{
+    margin: 2rem 0;
+  }
+
+  .about_me .about_me__text i{
+    padding: 3rem 0;
+  }
+  .about_me .container .fa-angle-down{
+    padding: 3rem;
+  }
+}
+
+
+/*- - - - -  -PROJECTS- - - - -  -*/
+.project {
+  background: #2b2b2b;
+  padding: 7rem 0;}
+.project .container h1{
+color: #ffa700;
+font-size: 4rem;
+font-weight: 900;
+}
+.project .container h3{
+  color: #ffffff;
+  margin-bottom: 6rem;
+  }
+.project_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rem;
+  
+}
+.project .project_card{
+  background: #ffffff;
+  border-radius: 3rem;
+  align-self: center;
+  text-align: justify;
+  margin-top: 3rem;
+
+
+}
+.project .project_card img{
+width: 100%;
+}
+.project .project_card h4{
+  padding: 0 2rem;
+  padding: 3rem ;
+  color: #ffa700;
+  font-weight: 600;
+
+ }
+ 
+.project .project_card P{
+ padding: 2rem 3rem;
+ margin-bottom: 9rem;
+
+}
+.project .container h1{
+ margin-top: 4rem;
+  }
+  
+.project .container h3{
+padding: 3rem 0;
+}
+
+@media screen and (max-width:500px){
+  .project .project_wrapper{
+  text-align: center;
+  display: block;
+  padding: 3rem 0;
+  margin: 0 4rem;
+  }
+  .project .container h1{
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  .project .container h3{
+    text-align: justify;
+    margin: 0 5rem;
+    
+
+  }
+  }
 
 
 /*- - - - - - REPEATABLE PATTERN  - - - - - - - */
