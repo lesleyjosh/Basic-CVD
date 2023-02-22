@@ -140,6 +140,7 @@ img {
   position: relative;
   position: fixed;
   width: 100%;
+  z-index: 99;
 
 }
 
@@ -424,6 +425,106 @@ aboutme{
  }
 }
 
+/*- - - - -  - LATEST UPDATES- - - - - - */
+.latest{
+  background: #2b2b2b;
+  padding: 6rem 0;
+}
+.latest .latest__title h2{
+  color:#ffa700;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.latest .latest__title p{
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+.latest .latest__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 4rem;
+}
+.latest .latest__card{
+ background: #ffffff;
+ border-radius: 3rem;
+}
+.latest .latest__card img{
+  width: 100%;
+}
+.latest .latest__card__text{
+  align-self: center;
+  margin: 2rem;
+}
+.latest .latest__card h4{
+color: #ffa700;
+margin: 1rem 0;
+font-weight: 600;
+}
+.latest .latest__card p{
+  color: #2b2b2b;
+  margin: 2rem 0;
+  }
+  .latest .latest__card a{
+    color: #ffa700;
+    }
+@media screen and (max-width:500px){
+.latest .latest__title h2{
+text-align: center;
+}
+.latest .latest__title p{
+  text-align: center;
+  }
+.latest .latest__wrapper{
+  display: block;
+  padding: 0 4rem;
+}
+.latest .latest__wrapper .latest__card{
+  margin: 6rem 0;
+}
+}
+/*- - - - -  CONTACT - - - - - - */
+.contact{
+  background: #ffa700;
+}
+.contact .contact__text{
+  text-align: center;
+  color: #2b2b2b;
+margin: 3rem 0;
+}
+.contact .contact__text h2{
+ font-size: 2rem;
+ font-weight: 800;
+
+}
+.contact .contact__text a{
+ margin-top: 3rem;
+ }
+ @media screen and (max-width:500px){
+  .contact .contact__text h2{
+    font-size: 2rem;
+    font-weight: 600;
+   
+   }
+ }
+
+/*- - - - - FOOTER - - - - - */
+.footer{
+  background: #2b2b2b;
+  padding: 4rem 0;
+}
+.footer .footer__wrapper{
+  display: flex;
+}
+.footer .footer__wrapper p{
+ color: #ffffff;
+}
+.footer .footer__wrapper ul{
+  display: flex;
+  color: #ffffff;
+}
+
+
 /*- - - - - - REPEATABLE PATTERN  - - - - - - - */
 
 .btn{
@@ -445,6 +546,10 @@ aboutme{
 .bg--dark{
   background: #2b2b2b;
   color: #ffffff;
+}
+.bg--dark:hover{
+  background: #ffa700;
+  border: 1px solid #2b2b2b;
 }
 
 
